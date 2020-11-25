@@ -4,58 +4,133 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:weightSum="4"
+    android:weightSum="7"
     tools:context=".MainActivity">
 
 
     <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1.8"
         android:orientation="horizontal"
         android:weightSum="3">
 
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="#c88b42"
             android:layout_weight="1"
             android:textColor="@color/white"
             android:gravity="center"
+            android:textSize="20sp"
             android:text="This is an orange TextView" />
 
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="#5ecd51"
             android:layout_weight="1"
-            android:textColor="@color/white"
+            android:textColor="@color/black"
             android:gravity="center"
-            android:text="This is an green TextView" />
+            android:textSize="20sp"
+            android:padding="0dp"
+            android:text="This is a green TextView" />
 
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="#3164a9"
             android:layout_weight="1"
             android:textColor="@color/white"
             android:gravity="center"
-            android:text="This is an blue TextView" />
+            android:textSize="20sp"
+            android:text="This is a blue TextView" />
 
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_weight="1">
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1.8"
+        android:orientation="horizontal"
+        android:weightSum="3">
 
         <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:textColor="@color/black"
+            android:backgroundTint="#3164a9"
+            android:layout_weight="1"
+            android:layout_margin="3dp"
+            android:text="THIS IS A BUTTON"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/icon"
+            android:scaleType="fitCenter"
+            android:layout_weight="1"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/black"
+            android:backgroundTint="#5ecd51"
+            android:layout_weight="1"
+            android:layout_margin="3dp"
+            android:textSize="13sp"
+            android:padding="0dp"
+            android:text="THIS IS A GREEN BUTTON"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1.9">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="#c88b42"
+            android:weightSum="2">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="bottom"
+                android:inputType="text"
+                android:hint="This is an EditText"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="bottom"
+                android:inputType="text"
+                android:hint="This is a new EditText"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1.5">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/black"
+            android:backgroundTint="#5ecd51"
+            android:layout_weight="1"
             android:text="THIS IS A BUTTON"/>
 
     </LinearLayout>
+
 
 
 </LinearLayout>
